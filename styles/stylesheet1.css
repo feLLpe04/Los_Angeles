@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Castello Typeface', Georgia, serif;
     scroll-behavior: smooth;
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
 }
 
 :root {
-    --logo-color: #f7931d;
-    --text-color: #ffffff;
-    --subtitle-color: rgb(186, 195, 214);
-    --color-background: #181a1e;
-    --card-color: #212630;
+    --logo-color: #da2129;
+    --logo-hover: #b01e25;
+    --text-color: #111111;
+    --subtitle-color: #4a5568;
+    --color-background: #fff7e7;
+    --card-color: #ffffff;
     --texto-grande: 5rem;
     --h2-size: 1.5rem;
     --p-size: 0.9rem;    
@@ -27,7 +26,21 @@
 
 body {
     background-color: var(--color-background);
-    font-family: poppins, sans-serif;
+    font-family: 'Castello Typeface', Georgia, serif;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
 }
 
 .nav-header {
@@ -68,16 +81,16 @@ body {
 }
 
 .navbar a.active:hover {
-    color: #e0861e;
+    color: var(--logo-hover);
 }
 
 .navbar a:hover {
-    color: #9fadc9;
+    color: #6b7280;
     transition: .4s;
 }
 
 #menu-icon {
-    color: white;
+    color: var(--text-color);
     font-size: 2rem;
     cursor: pointer;
 }
@@ -108,11 +121,11 @@ section {
 }
 
 .home-text h2 {
-    color: white;
+    color: var(--text-color);
     margin: 1rem 0 2rem;
 }
 
-.home-text button {
+.home-text a.buy-button-home {
     background-color: var(--logo-color);
     padding: 10px 25px;
     border: none;
@@ -123,9 +136,9 @@ section {
     display: inline-block;
 }
 
-.home-text button:hover {
+.home-text a.buy-button-home:hover {
     cursor: pointer;
-    background-color: #e0861e;
+    background-color: var(--logo-hover);
     transform: scale(1.2) translateY(10px);
     transition: .4s;
 }
@@ -158,13 +171,13 @@ section {
 }
 
 .card-criador h3 {
-    color: white;
+    color: var(--text-color);
 }
 
 .card-criador img {
     width: 60%;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--logo-color);
 }
 
 .about-text span {
@@ -231,7 +244,7 @@ section {
 
 .card-pedidos h2 {
     font-size: 1.3rem;
-    color: white;
+    color: var(--text-color);
     font-weight: 400;
     margin: 4px 0 10px;
 }
@@ -268,20 +281,20 @@ section {
 }
 
 .mais:hover {
-    background-color: #c0731b;
+    background-color: var(--logo-hover);
     cursor: pointer;
     transition: .4s;
 }
 
 .menos:hover {
-    background-color: #c0731b;
+    background-color: var(--logo-hover);
     cursor: pointer;
     transition: .4s;
 }
 
 .amount-selector input.amount-show {
-    background-color: var(--color-background);
-    border: none;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
     outline: none;
     font-weight: bold;
     display: flex;
@@ -293,7 +306,7 @@ section {
 
 .finalizarPedido {
     margin-top: 3%;
-    background-color: #f7931d;
+    background-color: var(--logo-color);
     color: white;
     font-weight: bold;
     padding: 10px 30px;
@@ -303,7 +316,7 @@ section {
 }
 
 .finalizarPedido:hover {
-    background-color: #c0731b;
+    background-color: var(--logo-hover);
     cursor: pointer;
     transition: .4s;
 }

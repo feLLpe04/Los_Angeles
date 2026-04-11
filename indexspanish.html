@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/castello-typeface" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/stylesheet1.css">
+    <title>Los Ángeles — Bogotá</title>
+</head>
+<body onload="onLoadPage()">
+    <header class="nav-header">
+        <a href="./index.html"><img src="./images/logo_withoutBackground.png" alt="" class="logo-header"></a>
+        <span class="material-icons" id="menu-icon">menu</span>
+        <div class="navbar">
+            <a href="#home" class="navbar-link active">Inicio</a>
+            <a href="#Nosotros" class="navbar-link">Nosotros</a>
+            <a href="#pedido" class="navbar-link">Comprar</a>
+            <a href="https://wa.me/573001243815?text=Hola%2C%20vengo%20desde%20la%20web%20de%20Los%20%C3%81ngeles%20y%20quiero%20informaci%C3%B3n." class="navbar-link" target="_blank" rel="noopener noreferrer">CONTACTAR</a>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-apresentation">
+            <div class="home-text">
+                <h1>LOS ANGELES</h1>
+                <h2>FOOD FOR YOU</h2>
+                <a href="#pedido" class="buy-button-home">Comprar</a>
+            </div>
+        </div>
+        <div class="home-hambuerguer-image">
+            <img src="./images/hamburguerPNG1.png" alt="">
+        </div>
+    </section>
+    <section class="sobre" id="Nosotros">
+        <div class="card-criador">
+            <h2>LOS ANGELES</h2>
+            <img src="./images/netao.webp" alt="">
+            <h3>COMIDA SIEMPRE FRESCA</h3>
+        </div>
+        <div class="about-text">
+            <span>Nosotros</span>
+            <h2>DOMICILIO GRATIS SOBRE COMPRAS MAYORES A 75K COP</h2>
+            <p>Operamos en el Norte de Bogotá.</p>
+        </div>
+    </section>
+    <section class="pedido" id="pedido">
+        <div class="header-pedidos">
+            <span>Menú</span>
+            <h1>El Mejor Sabor de Bogotá en tu Comida <span class="material-icons">shopping_cart</span></h1>
+        </div>
+        <form class="container-pedidos" id="form-pedido" action="#" method="get">
+            <div class="card-pedidos">
+                <img src="./images/Gaseosas.png" alt="">
+                <h2>Gaseosas</h2>
+                <span class="preço">$4K</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos1"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount1" name="a" value="0" />
+                    <div class="mais" id="mais1"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/Pero Clasico.png" alt="">
+                <h2>Perro Clásico</h2>
+                <span class="preço">$22K</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos2"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount2" name="b" value="0"/>
+                    <div class="mais" id="mais2"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/Perro Los Angeles .png" alt="">
+                <h2>Perro Los Angeles</h2>
+                <span class="preço">$30K</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos3"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount3" name="c" value="0"/>
+                    <div class="mais" id="mais3"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/hambuerguer1.png" alt="">
+                <h2>La Clásica</h2>
+                <span class="preço">$36K</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos4"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount4" name="d" value="0"/>
+                    <div class="mais" id="mais4"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/hamburguer2.png" alt="">
+                <h2>La Doble</h2>
+                <span class="preço">$44K</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos5"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount5" name="e" value="0"/>
+                    <div class="mais" id="mais5"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+            <div class="card-pedidos">
+                <img src="./images/hamburguer3.png" alt="">
+                <h2>La Hawaiana</h2>
+                <span class="preço">$39K</span>
+                <div class="amount-selector">
+                    <div class="menos" id="menos6"><span class="material-icons">arrow_back_ios</span></div>
+                    <input class="amount-show" id="amount6" name="f" value="0"/>
+                    <div class="mais" id="mais6"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+            </div>
+        <button type="button" class="finalizarPedido" id="btn-finalizar-pedido" align="center">Finalizar Pedido</button>
+        </form>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
