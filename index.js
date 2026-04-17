@@ -171,4 +171,20 @@ function onLoadPage() {
     }
 
     btnFinalizar.addEventListener('click', enviarPedidoWhatsApp);
+
+    // Mobile menu toggle
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+    if (menuIcon && navbar) {
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('open');
+        });
+        // Close menu when clicking a link
+        const navLinks = document.querySelectorAll('.navbar-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('open');
+            });
+        });
+    }
 }
